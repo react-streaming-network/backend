@@ -1,0 +1,35 @@
+{
+  "name": "streamers-backend-server",
+  "version": "1.0.0",
+  "description": "A backend for a youtube livestreaming network",
+  "main": "index.js",
+  "keywords": [
+    "backend",
+    "live",
+    "youtube",
+    "streamers",
+    "api"
+  ],
+  "dependencies": {
+    "JSON": "^1.0.0",
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.15.2",
+    "helmet": "^3.15.1",
+    "jsonwebtoken": "^8.5.0",
+    "knex": "^0.16.3",
+    "morgan": "^1.9.1",
+    "pg": "^7.10.0",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon"
+  },
+  "author": "Kieran Vieira"
+}
