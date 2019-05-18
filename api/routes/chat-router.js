@@ -8,7 +8,7 @@ const key = process.env.KEY;
 router.get('/:chatId', (req, res) => {
     axios.get(`https://www.googleapis.com/youtube/v3/liveChat/messages?liveChatId=${req.params.chatId}&part=id,snippet,authorDetails&maxResults=200&key=${key}`)
         .then(chat => {
-            res.status(200).json(chat);
+            res.status(200).json(chat.data);
         })
         .catch(error => {
             res.status(500).json({
